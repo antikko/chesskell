@@ -34,11 +34,20 @@ Commits follow the following structure: `TAG, COMPONENT: DESCRIPTION`
 Where tag describes the type of commit, component desicbes what part of program it affects and description descibes shortly what it does.
 
 |TAG    | Intrepretation    |
-|:-------|-------------------|
+|:------|-------------------|
 |feat   | Adds or alters functionality  |
 |bugfix | Corrects functionality to intended |
 |dep    | Adds a new dependancy |
 |other  | If not listed above   |
+
+Each feature will be done in own branch which will follow the format:
+
+`BRANCH_TYPE/descption` where desction is 2-3 word descrition of inteded change and BRANCH_TYPE is in following.
+
+|Type   |Interpretation|
+|:---   |---|
+|feature | Consistes mainly of feature commits|
+|bugfix | Only corrects bugs|
 
 Proces before merge is following
 
@@ -53,4 +62,5 @@ git checkout feature-branch
 git rebase master -i
 git merge feature-branch --no-ff
 ```
+
 Some of the practices may change in time.
