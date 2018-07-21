@@ -1,6 +1,9 @@
 module Main where
 
+import System.IO
 import Game
 
 main :: IO ()
-main = run_game
+main = do
+    hSetBuffering stdout NoBuffering
+    run_game
